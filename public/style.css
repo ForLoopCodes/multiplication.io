@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+* {
+  text-shadow: 0 0 2px #ffffffaa;
+  transition: 0.5s ease;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 700;
+  color: #ffffff;
+}
+html,
+body,
+.viewport {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #20202b;
+}
