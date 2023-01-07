@@ -56,20 +56,19 @@ export default function Question() {
   return (
     <div
       style={{
-        fontSize: "4rem",
+        fontSize: "2rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "jetbrains mono",
       }}
     >
       <span>
         <div
           style={{
             position: "fixed",
-            top: "calc(50% - 7rem)",
-            right: "calc(50% + 0px)",
+            top: "calc(50% - 5rem)",
+            right: "calc(50% - 10px)",
             textAlign: "right",
           }}
         >
@@ -78,10 +77,9 @@ export default function Question() {
         <div
           style={{
             position: "fixed",
-            top: "calc(50% - 7rem)",
-            left: "calc(50% - 12px)",
+            top: "calc(50% - 5rem)",
+            left: "calc(50% + 13px)",
             textAlign: "center",
-            scale: "0.6",
             opacity: "0.8",
           }}
         >
@@ -94,8 +92,8 @@ export default function Question() {
         <div
           style={{
             position: "fixed",
-            top: "calc(50% - 7rem)",
-            left: "calc(50% + 15px)",
+            top: "calc(50% - 5rem)",
+            left: "calc(50% + 25px)",
             textAlign: "right",
           }}
         >
@@ -113,7 +111,7 @@ export default function Question() {
           style={{
             position: "fixed",
             top: "calc(50% - 2.5rem)",
-            right: "calc(50% + 0px)",
+            right: "calc(50% - 10px)",
             textAlign: "center",
           }}
         >
@@ -123,9 +121,8 @@ export default function Question() {
           style={{
             position: "fixed",
             top: "calc(50% - 2.5rem)",
-            left: "calc(50% - 12px)",
+            left: "calc(50% + 13px)",
             textAlign: "left",
-            scale: "0.6",
             opacity: "0.8",
           }}
         >
@@ -139,7 +136,7 @@ export default function Question() {
           style={{
             position: "fixed",
             top: "calc(50% - 2.5rem)",
-            left: "calc(50% + 15px)",
+            left: "calc(50% + 25px)",
             textAlign: "left",
           }}
         >
@@ -152,19 +149,11 @@ export default function Question() {
             : parseInt(num2.split(".")[1])}
         </div>
       </span>
+      <nav class="line"></nav>
       <input
-        type="text"
-        style={{
-          position: "fixed",
-          top: "calc(50% + 3rem)",
-          left: "calc(50% - 200px)",
-          textAlign: "center",
-          width: "400px",
-          fontSize: "4rem",
-          outline: "none",
-          border: "solid 1px #000",
-          borderRadius: "5px",
-        }}
+        type="number"
+        placeholder=""
+        className="input"
         onKeyUp={(e) => {
           if (
             Math.abs(
@@ -181,16 +170,16 @@ export default function Question() {
       <div
         style={{
           position: "fixed",
-          top: "calc(50% - 1.5rem)",
-          left: "calc(50% - 200px)",
-          fontFamily: "helvetica now display",
-          fontSize: "2rem",
-          fontWeight: "bold",
+          top: "calc(50% - 2.35rem)",
+          left: "calc(50% - 100px)",
+          opacity: "0.6",
         }}
       >
-        x
+        <svg viewBox="0 0 24 24" width="28px" height="30px" fill="#fff">
+          <path d="M18,6h0a1,1,0,0,0-1.414,0L12,10.586,7.414,6A1,1,0,0,0,6,6H6A1,1,0,0,0,6,7.414L10.586,12,6,16.586A1,1,0,0,0,6,18H6a1,1,0,0,0,1.414,0L12,13.414,16.586,18A1,1,0,0,0,18,18h0a1,1,0,0,0,0-1.414L13.414,12,18,7.414A1,1,0,0,0,18,6Z" />
+        </svg>
       </div>
-      <div>
+      <div style={{ opacity: "0" }}>
         {
           // time + ", " +
           streak

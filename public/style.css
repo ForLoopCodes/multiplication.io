@@ -2,8 +2,8 @@
 * {
   text-shadow: 0 0 2px #ffffffaa;
   transition: 0.5s ease;
-  font-family: "Major Mono Display", monospace;
-  font-weight: 700;
+  font-family: "Inter", monospace;
+  font-weight: 300;
   color: #ffffff;
 }
 html,
@@ -12,5 +12,31 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: #20202b;
+  background-color: #000;
+}
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input {
+  position: fixed;
+  top: calc(50% + 0.5rem);
+  left: calc(50% - 100px);
+  text-align: center;
+  width: 200px;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.line {
+  position: absolute;
+  top: calc(50% + 2px);
+  left: calc(50% - 70px);
+  width: 150px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.6;
+  border-radius: 0.5rem;
 }
